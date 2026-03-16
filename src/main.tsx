@@ -4,7 +4,11 @@ import { RouterProvider } from "react-router-dom";
 import "./index.css";
 import { appRouter } from "./router/routes";
 
-createRoot(document.getElementById("root")!).render(
+const rootDocument: HTMLElement = document.getElementById(
+  "root",
+) as HTMLElement;
+
+createRoot(rootDocument).render(
   <StrictMode>
     <RouterProvider router={appRouter} />
   </StrictMode>,

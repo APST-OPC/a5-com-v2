@@ -1,4 +1,6 @@
-const App = () => {
+import type { ReactElement } from "react";
+
+const App = (): ReactElement => {
   return (
     <div>
       <main className="container mx-auto p-5">
