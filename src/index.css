@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+    --color-background: #0B1220;
+    --color-background-secondary: #0F172A;
+    --color-background-tertiary: #172033;
+
+    --color-text: #F1F5F9;
+    --color-text-secondary: #CBD5F5;
+    --color-text-tertiary: #94A3B8;
+
+    --color-button: #6366F1;
+    --color-button-secondary: #38BDF8;
+    --color-button-tertiary: #22D3EE;
+
+    --color-success: #10B981;
+    --color-warning: #F59E0B;
+    --color-error: #EF4444;
+    --color-info: #38BDF8;
+
+    --font-inter: "Inter", system-ui, sans-serif;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-inter);
+    font-size: 14px;
+    line-height: 1.5;
+}
