@@ -1,0 +1,7 @@
+export type IconName =
+  | "ic_svg_vip"
+  | "ic_svg_vip_icon"
+  | "ic_svg_event"
+  | "ic_svg_logo"
+  | "ic_svg_telegram"
+  | "ic_svg_wallet";

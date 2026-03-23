@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Landing from "@/page/landing/Landing";
+import 'virtual:svg-icons-register'
 import "./index.css";
 
 const rootDocument: HTMLElement = document.getElementById(
