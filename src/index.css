@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
+@plugin "daisyui";
 
 @theme {
     --color-background: #0B1220;
@@ -19,11 +20,25 @@
     --color-error: #EF4444;
     --color-info: #38BDF8;
 
-    --font-inter: "Inter", system-ui, sans-serif;
+    --font-inter: "Inter", system- ui, sans-serif;
+
+    --animate-marquee: marquee 10s linear infinite;
+    
+    @keyframes marquee {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    --shadow-uniform: 0 0 15px rgba(0, 0, 0, 0.20);
 }
 
 body {
-    background-color: var(--color-background);
+    background-color: var(--color-text);
     color: var(--color-text);
     font-family: var(--font-inter);
     font-size: 14px;
