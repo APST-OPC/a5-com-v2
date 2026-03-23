@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    Sitemap({ hostname: "https://example.com" }),
+    Sitemap({ hostname: "https://a5-com-v2.pages.dev/" }),
   ],
 
   resolve: {
