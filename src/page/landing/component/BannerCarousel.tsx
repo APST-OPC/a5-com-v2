@@ -18,7 +18,7 @@ const BannerCarousel = () => {
       <div ref={emblaRef}>
         <div className="flex">
           {[1, 2, 3].map((item) => (
-            <div className="flex-[0_0_100%] relative">
+            <div className="flex-[0_0_100%] relative" key={item}>
               <img
                 className="w-full h-full object-contain"
                 src={BannerImage}
