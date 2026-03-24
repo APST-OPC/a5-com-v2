@@ -20,6 +20,13 @@ export const usdtLine: USDTLine[] = [
 export const redirectInfo: RedirectBtn[] = [
   {
     items: {
+      title: "6F.VIP润豐H5",
+      subTitle: "6F.VIP Runfeng H5 Web Version",
+      image: "ic_svg_h5",
+    },
+  },
+  {
+    items: {
       title: "6F.VIP润豐频道",
       subTitle: "6F.VIP Runfeng Official Telegram Channel",
       image: "ic_svg_telegram",
