@@ -6,7 +6,7 @@ export const RetestButton = () => {
     <Button variant="ghost" className="relative overflow-hidden w-full p-3">
       <img
         src={RetestBg}
-        className="object-cover absolute inset-0 h-full w-full"
+        className="object-cover rounded-xl absolute inset-0 h-full w-full"
         alt="btn-bg"
         loading="eager"
         decoding="async"
