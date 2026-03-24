@@ -22,18 +22,22 @@
     --font-inter: "Inter", system- ui, sans-serif;
 
     --animate-marquee: marquee 10s linear infinite;
-    
-    @keyframes marquee {
-        from {
-            transform: translateX(100%);
-        }
-
-        to {
-            transform: translateX(-100%);
-        }
-    }
 
     --shadow-uniform: 0 0 5px rgba(0, 0, 0, 0.40);
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee {
+    animation: marquee 10s linear infinite;
 }
 
 body {

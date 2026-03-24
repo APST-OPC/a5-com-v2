@@ -90,7 +90,7 @@ const Landing = (): ReactElement => {
   const renderTopLinks = () => {
     return (
       <div className="bg-white space-y-1 p-2 rounded-lg">
-        <p className="tex-sm text-slate-400 text-nowrap flex gap-1 items-center justify-center">
+        <p className="tex-sm text-slate-400 text-nowrap flex gap-1 items-center justify-center animate-marquee">
           <span>
             <SvgIcons name="ic_svg_bell" className="size-5" />
           </span>
