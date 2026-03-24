@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "optimize:svg": "svgo -f ./src/assets/svg"
+    "optimize:svg": "svgo -f ./public/svg"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
