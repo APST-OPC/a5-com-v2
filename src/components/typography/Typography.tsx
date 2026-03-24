@@ -14,7 +14,7 @@ const Typography = (props: ISeparatorText) => {
   const asChild = typeof children !== "string";
   return (
     <div className={cn("flex items-center gap-2", className)}>
-      {icon && <img src={Token} className="size-7 md:size-10" />}
+      {icon && <img src={Token} className="size-7 md:size-10 object-contain" alt='token' />}
       {asChild ? children : <p className={contentClass}>{children}</p>}
     </div>
   );

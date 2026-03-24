@@ -3,6 +3,7 @@ import { createSvgIconsPlugin } from "vite-plugin-svg-icons";
 import react from "@vitejs/plugin-react";
 import Sitemap from "vite-plugin-sitemap";
 import tailwindcss from "@tailwindcss/vite";
+import { imagetools } from "vite-imagetools";
 import path from "path";
 
 export default defineConfig({
@@ -14,8 +15,9 @@ export default defineConfig({
       iconDirs: [path.resolve(process.cwd(), "public/svg")],
       symbolId: "icon-[dir]-[name]",
     }),
+    imagetools(),
   ],
-  assetsInclude:["**/.svg"],
+  assetsInclude: ["**/.svg"],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

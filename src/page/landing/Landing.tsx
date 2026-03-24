@@ -75,9 +75,9 @@ const RedirectButton = ({ items }: RedirectBtn) => {
 
 const RetestButton = () => {
   return (
-    <Button className="relative overflow-hidden w-full p-3">
+    <Button variant="ghost" className="relative overflow-hidden w-full p-3">
       <span
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-contain bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${RetestBg})` }}
       />
 
@@ -107,7 +107,13 @@ const Landing = (): ReactElement => {
     <div className="max-w-xl mx-auto space-y-3 md:space-y-5">
       <NavHeader />
       <section>
-        <img className="h-[30dvh] w-full" src={HeaderImage} alt="header" />
+        <img
+          className="h-full w-full object-contain"
+          src={HeaderImage}
+          alt="header"
+          loading="lazy"
+          decoding="async"
+        />
       </section>
       <main className="px-5">
         <div className="space-y-3 md:space-y-5 p-px overflow-hidden bg-linear-to-b from-slate-400/20 from-25% via-slate-400/10 to-white rounded-lg">
