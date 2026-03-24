@@ -16,11 +16,12 @@ export const DedicatedLine = ({ contents }: USDTLine) => {
           </Typography>
         </div>
         <Typography className="pl-3 justify-end w-1/2">
-          <div className="p-[0.187rem] bg-blue-900 rounded-xl">
-            <Button className="bg-linear-to-t from-[#1E3F8F] via-button to-[#3A66D4] text-base md:text-xl p-1.5 md:pl-4 rounded-lg border-[0.100rem] border-blue-300">
-              立即进入 <ChevronRight className="size-5 md:size-7" />
-            </Button>
-          </div>
+          <Button
+            variant="ghost"
+            className="relative overflow-hidden w-fit bg-full bg-center p-3 bg-[url('@/assets/retest_bg.webp')] rounded-xl text-text"
+          >
+            立即进入 <ChevronRight className="size-5" />
+          </Button>
         </Typography>
       </div>
     </section>

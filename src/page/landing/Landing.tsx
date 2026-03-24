@@ -2,24 +2,29 @@ import type { ReactElement } from "react";
 
 import { SvgIcons } from "@/components";
 import {
-  NavHeader,
+  LandingHeader,
   RetestButton,
   RedirectButton,
   DedicatedLine,
 } from "./component";
-import HeaderImage from "@/assets/headerImage.webp";
+import WebBackground from "@/assets/web_background.webp";
 import { redirectInfo, usdtLine } from "./utils";
+import Marquee from "react-fast-marquee";
+import LandingFooter from "./component/LandingFooter";
+import BannerCarousel from "./component/BannerCarousel";
 
 const Landing = (): ReactElement => {
   const renderTopLinks = () => {
     return (
-      <div className="bg-white space-y-1 p-3 rounded-lg">
-        <p className="tex-sm text-slate-400 text-nowrap flex gap-1 items-center justify-center animate-marquee">
-          <span>
-            <SvgIcons name="ic_svg_bell" className="size-5" />
-          </span>
-          6F.VIP润豐国际官方声明：本平台所有系统与游戏产品均采用官方真实
-        </p>
+      <div className="px-5 rounded-lg">
+        <div className="flex w-full gap-2 items-center">
+          <SvgIcons name="ic_svg_bell" className="size-10" />
+          <div className="text-base text-slate-600 overflow-hidden ">
+            <Marquee>
+              6F.VIP润豐国际官方声明：本平台所有系统与游戏产品均采用官方真实
+            </Marquee>
+          </div>
+        </div>
         <div className="space-y-3">
           <DedicatedLine contents={usdtLine[0].contents} />
           <DedicatedLine contents={usdtLine[1].contents} />
@@ -28,35 +33,31 @@ const Landing = (): ReactElement => {
     );
   };
   return (
-    <div className="max-w-lg w-full h-full mx-auto space-y-3">
-      <NavHeader />
-      <img
-        className="h-full w-full object-contain"
-        src={HeaderImage}
-        alt="header"
-        loading="eager"
-      />
-      <main className="px-2">
-        <div className="space-y-3 p-px overflow-hidden bg-linear-to-b from-slate-400/20 from-25% via-slate-400/10 to-white rounded-lg">
+    <div
+      className="h-dvh "
+      style={{
+        background: `url(${WebBackground})`,
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
+      <div className="h-full max-w-lg mx-auto">
+        <LandingHeader />
+        <main className="space-y-3 pb-3 h-[84%] overflow-y-auto">
+          <BannerCarousel />
           {renderTopLinks()}
-        </div>
-        <div className="p-3 space-y-3">
-          <RetestButton />
-          <section className="space-y-3">
-            {redirectInfo.map(({ items }, index) => (
-              <RedirectButton key={index} items={items} />
-            ))}
-          </section>
-          <section className="flex w-full justify-center items-center gap-2">
-            <SvgIcons name="ic_svg_vip" className="h-15 md:h-20 w-25 md:w-35" />
-            <div className="border-l border-[#B88F4D] h-5"></div>
-            <SvgIcons
-              name="ic_svg_logo"
-              className="h-15 md:h-20 w-25 md:w-35"
-            />
-          </section>
-        </div>
-      </main>
+          <div className="px-5 space-y-3">
+            <RetestButton />
+            <section className="space-y-3">
+              {redirectInfo.map(({ items }, index) => (
+                <RedirectButton key={index} items={items} />
+              ))}
+            </section>
+          </div>
+        </main>
+        <LandingFooter />
+      </div>
     </div>
   );
 };

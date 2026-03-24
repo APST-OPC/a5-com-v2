@@ -1,17 +1,12 @@
 import { Button } from "@/components";
-import RetestBg from "@/assets/retest_bg.webp";
 
 export const RetestButton = () => {
   return (
-    <Button variant="ghost" className="relative overflow-hidden w-full p-3">
-      <img
-        src={RetestBg}
-        className="object-cover rounded-xl absolute inset-0 h-full w-full"
-        alt="btn-bg"
-        loading="eager"
-        decoding="async"
-      />
-      <p className="z-10 text-sm md:text-2xl">Retest</p>
+    <Button
+      variant="ghost"
+      className="relative overflow-hidden w-full bg-full bg-center p-3 bg-[url('@/assets/retest_bg.webp')] rounded-xl shadow-uniform"
+    >
+      <p className="z-10 text-sm md:text-lg">重新检测</p>
     </Button>
   );
 };
