@@ -17,10 +17,9 @@ const Typography = (props: ISeparatorText) => {
       {icon && (
         <img
           src={Token}
-          className="size-7 md:size-10 object-contain"
+          className="size-8 object-contain"
           alt="token"
-          loading="eager"
-          decoding="async"
+          loading="lazy"
         />
       )}
       {asChild ? children : <p className={contentClass}>{children}</p>}

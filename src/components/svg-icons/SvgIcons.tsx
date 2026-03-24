@@ -5,7 +5,7 @@ interface SvgIconProps {
   className: string;
 }
 
-export const SvgIcons = (props: SvgIconProps) => {
+const SvgIcons = (props: SvgIconProps) => {
   const { name, className, ...rest } = props;
 
   return (
@@ -15,4 +15,4 @@ export const SvgIcons = (props: SvgIconProps) => {
   );
 };
 
-export default SvgIcons;
+export { SvgIcons };
