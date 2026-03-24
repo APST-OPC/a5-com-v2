@@ -5,7 +5,7 @@ export const RedirectButton = ({ items }: RedirectBtn) => {
   const { title, subTitle, image } = items;
   return (
     <div className="flex justify-center border-b-4 border-text bg-white  shadow-uniform rounded-lg w-full py-1 cursor-pointer">
-      <div className="flex items-center w-[60%] md:w-1/2 gap-3">
+      <div className="flex items-center w-[70%] md:w-1/2 gap-3">
         <SvgIcons className="size-8 md:size-10" name={image} />
         <div>
           <p className="text-nowrap text-lg text-button font-bold tracking-wider">
