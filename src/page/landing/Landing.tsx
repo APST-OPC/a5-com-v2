@@ -4,21 +4,27 @@ import type { RedirectBtn, USDTLine } from "./type";
 import { Button, Typography } from "@/components";
 import SvgIcons from "@/components/svg-icons/SvgIcons";
 import HeaderImage from "@/assets/headerImage.webp";
+import RetestBg from "@/assets/retest_btn.webp";
 import { redirectInfo, usdtLine } from "./utils";
 import { ChevronRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const NavHeader = () => {
+  const buttonClass = cn(
+    "relative p-1 px-5 rounded-full w-30 bg-[#d2d2d2] justify-end",
+    "hover:bg-[#d2d2d2]/70",
+  );
   return (
     <header className="shadow-sm flex justify-between">
       <SvgIcons name="ic_svg_vip" className="h-[7dvh] w-1/4 ml-5" />
       <div className="h-[7dvh] w-1/2 flex gap-3 items-center justify-end pr-2">
-        <Button className="relative p-1 px-5 rounded-full w-30 bg-[#F2F2F2] justify-end">
+        <Button className={buttonClass}>
           <SvgIcons name="ic_svg_event" className="size-11 absolute left-2" />
           <p className="text-lg text-black">活动</p>
         </Button>
-        <Button className="relative p-1 px-5 rounded-full w-30 bg-[#F2F2F2] justify-end">
-          <SvgIcons name="ic_svg_event" className="size-11 absolute left-2" />
-          <p className="text-lg text-black">活动</p>
+        <Button className={buttonClass}>
+          <SvgIcons name="ic_svg_chat" className="size-11 absolute left-2" />
+          <p className="text-lg text-black">客服</p>
         </Button>
       </div>
     </header>
@@ -53,7 +59,7 @@ const DedicatedLine = ({ contents }: USDTLine) => {
 const RedirectButton = ({ items }: RedirectBtn) => {
   const { title, subTitle, image } = items;
   return (
-    <div className="flex justify-center border-b-4 border-text bg-white  shadow-uniform rounded-lg w-full py-1">
+    <div className="flex justify-center border-b-4 border-text bg-white  shadow-uniform rounded-lg w-full py-1 cursor-pointer">
       <div className="flex items-center w-[60%] md:w-1/2 gap-3">
         <SvgIcons className="size-8 md:size-10" name={image} />
         <div>
@@ -67,11 +73,27 @@ const RedirectButton = ({ items }: RedirectBtn) => {
   );
 };
 
+const RetestButton = () => {
+  return (
+    <Button className="relative overflow-hidden w-full p-3">
+      <span
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${RetestBg})` }}
+      />
+
+      <span className="relative z-10 text-2xl">Retest</span>
+    </Button>
+  );
+};
+
 const Landing = (): ReactElement => {
   const renderTopLinks = () => {
     return (
       <div className="bg-white space-y-1 p-2 rounded-lg">
-        <p className="tex-sm text-slate-400 text-nowrap">
+        <p className="tex-sm text-slate-400 text-nowrap flex gap-1 items-center justify-center">
+          <span>
+            <SvgIcons name="ic_svg_bell" className="size-5" />
+          </span>
           6F.VIP润豐国际官方声明：本平台所有系统与游戏产品均采用官方真实
         </p>
         <div className="space-y-3 md:space-y-5">
@@ -93,12 +115,7 @@ const Landing = (): ReactElement => {
         </div>
         <div className="p-2 space-y-3 md:space-y-5">
           <section>
-            <Button
-              variant="ghost"
-              className="shadow-uniform bg-button w-full h-full py-3 rounded-lg text-base md:text-2xl"
-            >
-              Retest
-            </Button>
+            <RetestButton />
           </section>
           <section className="space-y-3 md:space-y-5">
             {redirectInfo.map(({ items }, index) => (

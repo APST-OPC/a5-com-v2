@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
-import Token from "@/assets/tokenIcon.png";
 import { cn } from "@/lib/utils";
+import SvgIcons from "@/components/svg-icons/SvgIcons";
 
 interface ISeparatorText {
   icon?: boolean;
@@ -14,7 +14,7 @@ const Typography = (props: ISeparatorText) => {
   const asChild = typeof children !== "string";
   return (
     <div className={cn("flex items-center gap-2", className)}>
-      {icon && <img src={Token} className="size-5 md:size-10" />}
+      {icon && <SvgIcons name="ic_svg_token" className="size-7 md:size-10" />}
       {asChild ? children : <p className={contentClass}>{children}</p>}
     </div>
   );

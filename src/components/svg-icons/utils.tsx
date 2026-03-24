@@ -4,4 +4,7 @@ export type IconName =
   | "ic_svg_event"
   | "ic_svg_logo"
   | "ic_svg_telegram"
-  | "ic_svg_wallet";
+  | "ic_svg_wallet"
+  | "ic_svg_chat"
+  | "ic_svg_token"
+  | "ic_svg_bell";

@@ -11,11 +11,11 @@ export default defineConfig({
     tailwindcss(),
     Sitemap({ hostname: "https://localhost:5173/", readable: true }),
     createSvgIconsPlugin({
-      iconDirs: [path.resolve(process.cwd(), "src/assets/svg")],
+      iconDirs: [path.resolve(process.cwd(), "public/svg")],
       symbolId: "icon-[dir]-[name]",
     }),
   ],
-
+  assetsInclude:["**/.svg"],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
