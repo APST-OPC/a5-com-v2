@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -19,7 +18,7 @@
     --color-error: #EF4444;
     --color-info: #38BDF8;
 
-    --font-inter: "Inter", system- ui, sans-serif;
+    --font-inter: "Inter", system-ui, sans-serif;
 
     --animate-marquee: marquee 10s linear infinite;
 

@@ -4,7 +4,7 @@ import type { RedirectBtn, USDTLine } from "./type";
 import { Button, Typography } from "@/components";
 import SvgIcons from "@/components/svg-icons/SvgIcons";
 import HeaderImage from "@/assets/headerImage.webp";
-import RetestBg from "@/assets/retest_btn.webp";
+import RetestBg from "@/assets/retest_bg.webp";
 import { redirectInfo, usdtLine } from "./utils";
 import { ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -76,12 +76,14 @@ const RedirectButton = ({ items }: RedirectBtn) => {
 const RetestButton = () => {
   return (
     <Button variant="ghost" className="relative overflow-hidden w-full p-3">
-      <span
-        className="absolute inset-0 bg-contain bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${RetestBg})` }}
+      <img
+        src={RetestBg}
+        className="object-cover absolute inset-0 h-full w-full"
+        alt="btn-bg"
+        loading="eager"
+        decoding="async"
       />
-
-      <span className="relative z-10 text-2xl">Retest</span>
+      <p className="z-10 text-sm md:text-2xl">Retest</p>
     </Button>
   );
 };
@@ -104,14 +106,14 @@ const Landing = (): ReactElement => {
     );
   };
   return (
-    <div className="max-w-xl mx-auto space-y-3 md:space-y-5">
+    <div className="max-w-xl w-full h-full mx-auto space-y-3 md:space-y-5">
       <NavHeader />
       <section>
         <img
           className="h-full w-full object-contain"
           src={HeaderImage}
           alt="header"
-          loading="lazy"
+          loading="eager"
           decoding="async"
         />
       </section>
