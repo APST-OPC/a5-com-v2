@@ -13,11 +13,11 @@ const Typography = (props: ISeparatorText) => {
   const { children, className, icon = false, contentClass } = props;
   const asChild = typeof children !== "string";
   return (
-    <div className={cn("flex items-center gap-2", className)}>
+    <div className={cn("flex items-center gap-1", className)}>
       {icon && (
         <img
           src={Token}
-          className="size-8 object-contain"
+          className="size-6 md:size-8 object-contain"
           alt="token"
           loading="lazy"
         />

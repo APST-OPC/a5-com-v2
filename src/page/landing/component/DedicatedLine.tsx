@@ -15,7 +15,7 @@ export const DedicatedLine = ({ contents }: USDTLine) => {
             {ping}
           </Typography>
         </div>
-        <Typography className="pl-3 justify-end w-1/2">
+        <Typography className="pl-3 justify-end">
           <Button
             variant="ghost"
             className="relative overflow-hidden w-fit bg-full bg-center p-3 bg-[url('@/assets/retest_bg.webp')] rounded-xl text-text"

@@ -34,7 +34,7 @@ const Landing = (): ReactElement => {
   };
   return (
     <div
-      className="h-dvh "
+      className="h-dvh max-w-lg mx-auto"
       style={{
         background: `url(${WebBackground})`,
         backgroundPosition: "center",
@@ -42,9 +42,9 @@ const Landing = (): ReactElement => {
         backgroundSize: "cover",
       }}
     >
-      <div className="h-full max-w-lg mx-auto">
+      <div className="h-full relative">
         <LandingHeader />
-        <main className="space-y-3 pb-3 h-[84%] overflow-y-auto">
+        <main className="space-y-3 pb-30 h-[92%] overflow-y-auto">
           <BannerCarousel />
           {renderTopLinks()}
           <div className="px-5 space-y-3">

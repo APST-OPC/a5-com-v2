@@ -26,11 +26,11 @@ export const LandingHeader = () => {
       <FlippingNavIcon />
       <div className="h-full w-1/2 flex gap-3 items-center justify-end pr-2">
         <Button className="bg-[#E2E8F0] hover:bg-[#d2d2d2]/70 py-1 px-4 rounded-full gap-2">
-          <SvgIcons name="ic_svg_event" className="size-6" />
+          <SvgIcons name="ic_svg_event" className="size-8" />
           <p className=" text-black">活动</p>
         </Button>
         <Button className="bg-[#E2E8F0] hover:bg-[#d2d2d2]/70 py-1 px-4 rounded-full gap-2">
-          <SvgIcons name="ic_svg_chat" className="size-6" />
+          <SvgIcons name="ic_svg_chat" className="size-8" />
           <p className=" text-black">客服</p>
         </Button>
       </div>

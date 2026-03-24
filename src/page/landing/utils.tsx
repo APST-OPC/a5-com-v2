@@ -18,13 +18,14 @@ export const usdtLine: USDTLine[] = [
 ];
 
 export const redirectInfo: RedirectBtn[] = [
-  {
-    items: {
-      title: "6F.VIP润豐H5",
-      subTitle: "6F.VIP Runfeng H5 Web Version",
-      image: "ic_svg_h5",
-    },
-  },
+  // {
+  //   items: {
+  //     title: "6F.VIP润豐H5",
+  //     subTitle: "6F.VIP Runfeng H5 Web Version",
+  //     image: "ic_svg_h5",
+  //   },
+  // },
+
   {
     items: {
       title: "6F.VIP润豐频道",
@@ -39,11 +40,12 @@ export const redirectInfo: RedirectBtn[] = [
       image: "ic_svg_vip_icon",
     },
   },
-  {
-    items: {
-      title: "益德金融频道",
-      subTitle: "Yide Financial Channel",
-      image: "ic_svg_wallet",
-    },
-  },
+
+  // {
+  //   items: {
+  //     title: "益德金融频道",
+  //     subTitle: "Yide Financial Channel",
+  //     image: "ic_svg_wallet",
+  //   },
+  // },
 ];
