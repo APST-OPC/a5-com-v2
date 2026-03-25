@@ -27,17 +27,12 @@
 }
 
 @keyframes flip {
-
-    0%,
-    45% {
+    0%,45% {
         transform: rotateY(0deg);
     }
-
-    50%,
-    95% {
+    50%,95% {
         transform: rotateY(180deg);
     }
-
     100% {
         transform: rotateY(360deg);
     }
@@ -47,12 +42,11 @@
     0% {
         left: -100%;
     }
-
     100% {
         left: 150%;
     }
 }
-/* flipping title animation */
+
 .flip-animation {
     animation: flip 10s infinite;
 }
@@ -73,7 +67,6 @@
     transform: rotateY(180deg);
 }
 
-/* animated gradient */
 .gold-text {
     position: relative;
     background: linear-gradient(180deg, #b8832f, #e6b85c, #c9973f, #f5d48a, #f5d48a);
@@ -93,12 +86,7 @@
     left: -100%;
     width: 50%;
     height: 100%;
-
-    background: linear-gradient(120deg,
-            transparent,
-            rgba(255, 255, 255, 0.5),
-            transparent);
-
+    background: linear-gradient(120deg,transparent,rgba(255, 255, 255, 0.5),transparent);
     animation: shine-sweep 3s infinite;
 }
 
