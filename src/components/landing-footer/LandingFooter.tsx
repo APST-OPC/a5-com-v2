@@ -1,4 +1,4 @@
-import FullLogo from "@/assets/FullLogo.png";
+import FullLogo from "@/assets/FullLogo.webp";
 const LandingFooter = () => {
   return (
     <footer className="flex w-full h-15 justify-center items-center gap-2 bottom-0">
