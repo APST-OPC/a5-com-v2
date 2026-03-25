@@ -36,7 +36,7 @@ const BannerCarousel = () => {
           {carouselHeaderList.map(({ image }, index) => (
             <div className="flex-[0_0_100%] relative" key={index}>
               <img
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover"
                 src={image}
                 alt={`banner-${index.toString()}`}
               />
