@@ -11,7 +11,7 @@ const DedicatedLine = ({ contents }: USDTLine) => {
   useEffect(() => {
     setTimeout(() => {
       setPing(`${fakePing}ms`);
-    }, 10000);
+    }, 5000);
   }, [fakePing]);
   return (
     <section className="p-1 px-3 md:px-5 w-full rounded-xl bg-white shadow-uniform space-y-1 md:space-y-3">
