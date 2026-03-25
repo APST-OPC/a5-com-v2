@@ -2,7 +2,6 @@ import type { IconName } from "@/components/ui/svg-icons/utils";
 
 interface LineContent {
   title: string;
-  ping: string;
   link: string;
 }
 interface RedirectContent {

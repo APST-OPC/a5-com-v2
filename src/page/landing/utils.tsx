@@ -4,14 +4,12 @@ export const usdtLine: USDTLine[] = [
   {
     contents: {
       title: "USDT专线1",
-      ping: "42ms",
       link: "5a615.com",
     },
   },
   {
     contents: {
       title: "USDT专线2",
-      ping: "52ms",
       link: "5a195.com",
     },
   },
