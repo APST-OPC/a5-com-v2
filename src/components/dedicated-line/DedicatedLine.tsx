@@ -12,7 +12,7 @@ const DedicatedLine = ({ contents }: USDTLine) => {
     setTimeout(() => {
       setPing(`${fakePing}ms`);
     }, 5000);
-  }, [fakePing]);
+  }, [fakePing, ping]);
   return (
     <section className="p-1 px-3 md:px-5 w-full rounded-xl bg-white shadow-uniform space-y-1 md:space-y-3">
       <div className="flex items-center justify-between text-black text-base md:text-xl">
