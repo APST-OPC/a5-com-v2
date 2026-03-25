@@ -55,8 +55,9 @@ const Landing = (): ReactElement => {
               ))}
             </section>
           </div>
+
+          <LandingFooter />
         </main>
-        <LandingFooter />
       </div>
     </div>
   );

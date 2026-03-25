@@ -7,7 +7,9 @@ const FlippingNavIcon = () => {
       <div className="relative w-full h-full preserve-3d flip-animation">
         <div className="absolute inset-0 backface-hidden flex items-center justify-center rotate-45">
           <div className="-rotate-45">
-            <SvgIcons name="ic_svg_vip" className="ml-5 h-full w-1/2" />
+            <h1 className="text-3xl gold-text font-black overflow-hidden">
+              6F.VIP
+            </h1>
           </div>
         </div>
 
