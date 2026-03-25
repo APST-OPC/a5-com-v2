@@ -1,6 +1,22 @@
 import useEmblaCarousel from "embla-carousel-react";
-import BannerImage from "@/assets/headerImage.webp";
 import Autoplay from "embla-carousel-autoplay";
+import BannerImage1 from "@/assets/carousel/header_1.webp";
+import BannerImage2 from "@/assets/carousel/header_2.webp";
+import BannerImage3 from "@/assets/carousel/header_3.webp";
+import BannerImage4 from "@/assets/carousel/header_4.webp";
+import BannerImage5 from "@/assets/carousel/header_5.webp";
+
+interface CarouselHeaderList {
+  image: string;
+}
+
+const carouselHeaderList: CarouselHeaderList[] = [
+  { image: BannerImage1 },
+  { image: BannerImage2 },
+  { image: BannerImage3 },
+  { image: BannerImage4 },
+  { image: BannerImage5 },
+];
 
 const BannerCarousel = () => {
   const [emblaRef] = useEmblaCarousel(
@@ -17,12 +33,12 @@ const BannerCarousel = () => {
     <div className="overflow-hidden w-full">
       <div ref={emblaRef}>
         <div className="flex">
-          {[1, 2, 3].map((item) => (
-            <div className="flex-[0_0_100%] relative" key={item}>
+          {carouselHeaderList.map(({ image }, index) => (
+            <div className="flex-[0_0_100%] relative" key={index}>
               <img
                 className="w-full h-full object-contain"
-                src={BannerImage}
-                alt={`banner-${item.toString()}`}
+                src={image}
+                alt={`banner-${index.toString()}`}
               />
             </div>
           ))}
