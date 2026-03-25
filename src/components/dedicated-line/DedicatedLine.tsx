@@ -1,8 +1,8 @@
 import type { USDTLine } from "@/page/landing/type";
-import { Button, Typography } from "@/components";
+import { Button, Typography } from "@/components/ui";
 import { ChevronRight } from "lucide-react";
 
-export const DedicatedLine = ({ contents }: USDTLine) => {
+const DedicatedLine = ({ contents }: USDTLine) => {
   const { title, ping } = contents;
   return (
     <section className="p-1 px-3 md:px-5 w-full rounded-xl bg-white shadow-uniform space-y-1 md:space-y-3">
@@ -28,4 +28,4 @@ export const DedicatedLine = ({ contents }: USDTLine) => {
   );
 };
 
-export default DedicatedLine;
+export { DedicatedLine };

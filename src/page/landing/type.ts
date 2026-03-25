@@ -1,4 +1,4 @@
-import type { IconName } from "@/components/svg-icons/utils";
+import type { IconName } from "@/components/ui/svg-icons/utils";
 
 interface LineContent {
   title: string;

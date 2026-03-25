@@ -32,4 +32,4 @@ const BannerCarousel = () => {
   );
 };
 
-export default BannerCarousel;
+export { BannerCarousel };

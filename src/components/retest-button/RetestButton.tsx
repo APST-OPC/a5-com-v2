@@ -1,6 +1,6 @@
-import { Button } from "@/components";
+import { Button } from "@/components/ui";
 
-export const RetestButton = () => {
+const RetestButton = () => {
   return (
     <Button
       variant="ghost"
@@ -11,4 +11,4 @@ export const RetestButton = () => {
   );
 };
 
-export default RetestButton;
+export { RetestButton };

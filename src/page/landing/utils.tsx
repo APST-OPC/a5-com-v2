@@ -37,7 +37,7 @@ export const redirectInfo: RedirectBtn[] = [
     items: {
       title: "益德金融频道",
       subTitle: "Exclusive On-site VIP Lounge Service",
-      image: "ic_svg_vip_icon",
+      image: "ic_svg_vip_laurel",
     },
   },
 

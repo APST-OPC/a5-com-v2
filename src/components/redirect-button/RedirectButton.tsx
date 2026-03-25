@@ -1,7 +1,7 @@
 import type { RedirectBtn } from "@/page/landing/type";
-import { SvgIcons } from "@/components";
+import { SvgIcons } from "@/components/ui";
 
-export const RedirectButton = ({ items }: RedirectBtn) => {
+const RedirectButton = ({ items }: RedirectBtn) => {
   const { title, subTitle, image } = items;
   return (
     <div className="flex justify-center border-b-4 border-[#D2D2E2] bg-white  shadow-uniform rounded-lg w-full py-1 cursor-pointer">
@@ -17,4 +17,5 @@ export const RedirectButton = ({ items }: RedirectBtn) => {
     </div>
   );
 };
-export default RedirectButton;
+
+export { RedirectButton };

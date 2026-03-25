@@ -1,17 +1,17 @@
 import type { ReactElement } from "react";
 
-import { SvgIcons } from "@/components";
+import { SvgIcons } from "@/components/ui";
 import {
   LandingHeader,
   RetestButton,
   RedirectButton,
   DedicatedLine,
-} from "./component";
+  BannerCarousel,
+  LandingFooter,
+} from "@/components";
 import WebBackground from "@/assets/web_background.webp";
 import { redirectInfo, usdtLine } from "./utils";
 import Marquee from "react-fast-marquee";
-import LandingFooter from "./component/LandingFooter";
-import BannerCarousel from "./component/BannerCarousel";
 
 const Landing = (): ReactElement => {
   const renderTopLinks = () => {
@@ -32,6 +32,24 @@ const Landing = (): ReactElement => {
       </div>
     );
   };
+
+  const redirectBtnList = () => {
+    return (
+      <section className="space-y-3">
+        {redirectInfo.map(({ items }, index) => (
+          <RedirectButton key={index} items={items} />
+        ))}
+      </section>
+    );
+  };
+  const renderBottomLinks = () => {
+    return (
+      <div className="px-5 space-y-3">
+        <RetestButton />
+        {redirectBtnList()}
+      </div>
+    );
+  };
   return (
     <div
       className="h-dvh max-w-lg mx-auto"
@@ -47,15 +65,7 @@ const Landing = (): ReactElement => {
         <main className="space-y-3 pb-30 h-[92%] overflow-y-auto">
           <BannerCarousel />
           {renderTopLinks()}
-          <div className="px-5 space-y-3">
-            <RetestButton />
-            <section className="space-y-3">
-              {redirectInfo.map(({ items }, index) => (
-                <RedirectButton key={index} items={items} />
-              ))}
-            </section>
-          </div>
-
+          {renderBottomLinks()}
           <LandingFooter />
         </main>
       </div>
