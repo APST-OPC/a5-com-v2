@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const DedicatedLine = ({ contents }: USDTLine) => {
   const { title } = contents;
-  const fakePing = (20 + Math.random() * 90).toFixed(0);
+  const fakePing = (10 + Math.random() * 90).toFixed(0);
   const [ping, setPing] = useState(`${fakePing}ms`);
 
   useEffect(() => {
