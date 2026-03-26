@@ -10,7 +10,7 @@ const SvgIcons = (props: SvgIconProps) => {
 
   return (
     <svg {...rest} aria-hidden="true" className={className}>
-      <use href={`#icon-${name}`} />
+      <use href={`#icon-${name}`} xlinkHref={`#icon-${name}`} />
     </svg>
   );
 };
