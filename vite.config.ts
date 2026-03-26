@@ -9,7 +9,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
     createSvgIconsPlugin({
-      iconDirs: [path.resolve(process.cwd(), "public/svg")],
+      iconDirs: [path.resolve(process.cwd(), "src/assets/svg")],
       symbolId: "icon-[dir]-[name]",
     }),
   ],
