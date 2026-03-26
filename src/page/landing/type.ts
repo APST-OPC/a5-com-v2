@@ -1,12 +1,10 @@
-import type { IconName } from "@/components/ui/svg-icons/utils";
-
 interface LineContent {
   title: string;
   link: string;
 }
 interface RedirectContent {
   title: string;
-  image: IconName;
+  image: string;
   subTitle: string;
 }
 export interface USDTLine {

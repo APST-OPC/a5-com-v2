@@ -1,4 +1,6 @@
 import type { RedirectBtn, USDTLine } from "./type";
+import Telegram from "@/assets/svg/ic_svg_telegram.svg";
+import VipLaurel from "@/assets/svg/ic_svg_vip_laurel.svg";
 
 export const usdtLine: USDTLine[] = [
   {
@@ -28,14 +30,14 @@ export const redirectInfo: RedirectBtn[] = [
     items: {
       title: "6F.VIP润豐频道",
       subTitle: "6F.VIP Runfeng Official Telegram Channel",
-      image: "ic_svg_telegram",
+      image: Telegram,
     },
   },
   {
     items: {
       title: "益德金融频道",
       subTitle: "Exclusive On-site VIP Lounge Service",
-      image: "ic_svg_vip_laurel",
+      image: VipLaurel,
     },
   },
 
