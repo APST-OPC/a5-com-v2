@@ -30,11 +30,19 @@ const LandingHeader = () => {
       <FlippingNavIcon />
       <div className="h-full w-1/2 flex gap-3 items-center justify-end pr-2">
         <Button className="bg-[#E2E8F0] hover:bg-[#d2d2d2]/70 py-1 px-2 md:px-4 rounded-full gap-2">
-          <img src={EventIcon} className="size-5 md:size-8" />
+          <img
+            src={EventIcon}
+            className="size-5 md:size-8"
+            alt="header-btn-event"
+          />
           <p className=" text-black">活动</p>
         </Button>
         <Button className="bg-[#E2E8F0] hover:bg-[#d2d2d2]/70 py-1 px-2 md:px-4 rounded-full gap-2">
-          <img src={ChatIcon} className="size-5 md:size-8" />
+          <img
+            src={ChatIcon}
+            className="size-5 md:size-8"
+            alt="header-btn-chat"
+          />
           <p className=" text-black">客服</p>
         </Button>
       </div>
